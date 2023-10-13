@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #fff; /* Arka plan rengi */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.blue {
+    background-color: #3498db; /* Mavi */
+}
+
+.red {
+    background-color: #e74c3c; /* Kırmızı */
+}
+
+.green {
+    background-color: #2ecc71; /* Yeşil */
+}
+
+@keyframes moveAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+        background-color: yellow;
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes rotateAnimation {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colorAnimation {
+    0% {
+        background-color: blue;
+    }
+    25% {
+        background-color: red;
+    }
+    50% {
+        background-color: green;
+    }
+    75% {
+        background-color: yellow;
+    }
+    100%{
+    background-color: black;
+     }
+}
